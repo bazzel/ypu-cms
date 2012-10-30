@@ -1,5 +1,5 @@
 # RVM bootstrap
-set :rvm_ruby_string, '1.9.2-p320@ypu-cms'
+set :rvm_ruby_string, '1.9.3-p194@ypu-cms'
 require "rvm/capistrano"                               # Load RVM's capistrano plugin.
 
 # When using whenever gem:
