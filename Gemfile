@@ -7,7 +7,7 @@ gem 'rails', '3.2.8'
 
 gem 'capistrano'
 gem 'rvm-capistrano'
-gem 'mysql2'
+gem 'mysql2', '3.10'
 
 
 # Gems used only for assets and not required
