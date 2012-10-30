@@ -22,6 +22,10 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+group :production do
+  gem 'fog'
+end
+
 gem 'jquery-rails', '~> 2.0.0'
 
 # To use ActiveModel has_secure_password
