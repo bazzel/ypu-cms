@@ -171,6 +171,8 @@ GEM
       dragonfly (~> 0.9.8)
       rack-cache (>= 0.5.3)
       refinerycms-core (= 2.0.8)
+    refinerycms-settings (2.0.2)
+      refinerycms-core (~> 2.0.1)
     routing-filter (0.3.1)
       actionpack
     ruby-hmac (0.4.0)
@@ -213,8 +215,9 @@ DEPENDENCIES
   jquery-rails (~> 2.0.0)
   mysql2
   rails (= 3.2.8)
-  refinerycms (~> 2.0.0)
-  refinerycms-i18n (~> 2.0.0)
+  refinerycms
+  refinerycms-i18n
+  refinerycms-settings
   rvm-capistrano
   sass-rails (~> 3.2.3)
   therubyracer
