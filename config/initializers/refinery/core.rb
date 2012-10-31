@@ -1,3 +1,5 @@
+require 'acts_as_indexed' # by Refinery::Setting
+
 Refinery::Core.configure do |config|
   # When true will rescue all not found errors and display a friendly error page
   config.rescue_not_found = Rails.env.production?
@@ -18,7 +20,7 @@ Refinery::Core.configure do |config|
   # config.base_cache_key = :refinery
 
   # Site name
-  # config.site_name = "Company Name"
+   config.site_name = ::Refinery::Setting.find_or_set(:site_name, Refinery::Core.site_name)
 
   # This activates Google Analytics tracking within your website. If this
   # config is left blank or set to UA-xxxxxx-x then no remote calls to
