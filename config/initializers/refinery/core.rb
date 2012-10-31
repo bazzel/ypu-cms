@@ -11,7 +11,7 @@ Refinery::Core.configure do |config|
   config.s3_bucket_name = 'ypu-cms'
   config.s3_access_key_id = ENV['S3_KEY']
   config.s3_secret_access_key = ENV['S3_SECRET']
-  config.s3_region = 'eu'
+  config.s3_region = 'eu-west-1'
 
   # Whenever Refinery caches anything and can set a cache key, it will add
   # a prefix to the cache key containing the string you set here.
