@@ -1,0 +1,21 @@
+@import 'compass/typography/vertical_rhythm';
+@import "compass/css3/box-shadow";
+@import "compass/css3/text-shadow";
+@import "compass/css3/box-shadow";
+
+#header {
+  @include rhythm(0,1,1,0);
+  background: #ccc;
+  @include single-box-shadow(rgba(0, 0, 0, .7), 0, 1px, 10px);
+  color: #111;
+  text-align: center;
+  h1 {
+    @include margin-leader(3, ms(7));;
+    @include adjust-font-size-to(ms(7));
+  }
+  h2 {
+    margin-top: 0;
+    letter-spacing: -1px;
+    @include adjust-font-size-to(ms(2), 1);
+  }
+}

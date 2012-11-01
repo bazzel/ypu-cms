@@ -6,6 +6,7 @@ gem 'rails', '3.2.8'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'capistrano'
+gem 'haml'
 gem 'rvm-capistrano'
 gem 'mysql2'
 
@@ -13,13 +14,22 @@ gem 'mysql2'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
+  gem 'compass-rails'
+  gem 'font-awesome-sass-rails'
+  gem 'modular-scale'
+  gem 'sass-rails',   '~> 3.2.3'
+  gem 'susy'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+end
+
+group :development do
+  gem 'hpricot'
+  gem 'ruby_parser'
 end
 
 group :production do

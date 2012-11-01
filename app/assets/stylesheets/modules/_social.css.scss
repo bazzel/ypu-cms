@@ -1,0 +1,35 @@
+@import "compass/typography/lists/inline-list";
+@import "compass/typography/links/unstyled-link";
+@import "compass/css3/border-radius";
+@import "compass/css3/transition";
+
+$size: 4*$base-font-size;
+
+ul.social {
+  @include inline-list;
+  li {
+    margin: 0 1em;
+    display: inline-block;
+    @include margin-trailer(1);
+    a {
+      @include transition(all .25s ease);
+      @include unstyled-link;
+      @include adjust-font-size-to(ms(3));
+      @include border-radius(50%);
+      width: $size;
+      height: $size;
+      line-height: $size;
+      display: inline-block;
+      background: #ccc;
+      color: #111;
+      span {
+        display: none;
+      }
+      &:hover {
+        color: #ccc;
+        background: #666;
+      }
+    }
+  }
+}
+

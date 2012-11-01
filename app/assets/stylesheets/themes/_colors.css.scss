@@ -1,0 +1,12 @@
+// http://www.colorschemedesigner.com/#1012sTOu9SMSE
+$hue                 : 214;
+$base_color          : hsl($hue, 95%, 49%); // #F0A600
+$color_variant1      : hsl($hue, 40%, 38%); // #88703B
+$color_variant2      : hsl($hue, 92%, 19%); // #5E4100
+$color_variant3      : hsl($hue, 97%, 71%); // #FDD16E
+$color_variant4      : hsl($hue, 93%, 89%); // #FDECC6
+
+$base_darker_color   : $color_variant1;
+$base_darkest_color  : $color_variant2;
+$base_lighter_color  : $color_variant3;
+$base_lightest_color : $color_variant4;
