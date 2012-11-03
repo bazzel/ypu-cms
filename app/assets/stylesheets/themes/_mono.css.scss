@@ -28,8 +28,13 @@ a {
   color: $base_darkest_color;
   @include single-box-shadow(rgba(0, 0, 0, .7), 0, 1px, 10px);
   h1 {
-    color: white;
     @include single-text-shadow(1px, 1px, 2px, false, rgba($base_darkest_color, .9));
+    &, & a {
+      color: white;
+    }
+    & a {
+      text-decoration: none;
+    }
   }
   h2 {
     color: $base_lightest_color;

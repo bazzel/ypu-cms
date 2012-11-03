@@ -1,0 +1,5 @@
+h1#body_content_title {
+  @include margin-leader(1, ms(2));;
+  @include adjust-font-size-to(ms(2));
+  font-weight: normal;
+}
