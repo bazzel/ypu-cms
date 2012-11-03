@@ -1,0 +1,15 @@
+%h4= ::Refinery::Setting.find_or_set(:slogan, "[Slogan] (Settings -> Slogan)")
+%p
+  Call us on
+  %span.tel= ::Refinery::Setting.find_or_set(:contact_phone, "[ContactPhone] (Settings -> contact_phone)")
+  or send an
+  = mail_to 'yvo@ypuconsulting.com', 'email', :class => 'email'
+%ul.social
+  %li
+    %a{ href: 'http://nl.linkedin.com/in/yvotrimbos', target: '_blank', title: 'View my LinkedIn profile' }>
+      %i.icon-linkedin-sign>
+      %span Linked in
+  %li
+    %a{ href: 'mailto: yvo@ypuconsulting.com', title: 'Send an email' }
+      %i.icon-envelope-alt
+      %span E-mail

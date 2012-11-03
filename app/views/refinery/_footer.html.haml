@@ -1,0 +1,6 @@
+= render :partial => '/pages/hcard'
+%small
+  .copyright
+    = t('.copyright', :year => Time.now.year, :site_name => Refinery::Core.site_name)
+  .disclaimer
+    = link_to 'Disclaimer', '/disclaimer.html'

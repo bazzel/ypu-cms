@@ -29,8 +29,16 @@ footer {
     background: #ccc;
     @include adjust-font-size-to(ms(-1));
     @include rhythm(0,2,2,0,ms(-1));
-    .copyright, .disclaimer {
+    & > * {
       display: inline-block;
+      // Create separator between items...
+      &:after {
+        content: ' | ';
+      }
+      // ...except for the last one.
+      &:last-child:after {
+        content: '';
+      }
     }
   }
 }
