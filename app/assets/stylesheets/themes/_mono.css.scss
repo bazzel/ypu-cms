@@ -62,7 +62,7 @@ nav {
       a {
         color: $base_lightest_color;
         background: $base_darkest_color;
-        &:visited {
+        &:link, &:visited {
           color: $base_lightest_color;
         }
         &:hover {
