@@ -1,0 +1,8 @@
+@import "compass/typography/lists/inline-list";
+
+ul.locales {
+  @include inline-list;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
