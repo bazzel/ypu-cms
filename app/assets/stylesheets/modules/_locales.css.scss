@@ -1,8 +1,23 @@
 @import "compass/typography/lists/inline-list";
+@import "compass/typography/text/replacement";
+@import "compass/utilities/sprites";
+
+@import "icons/flags/*.png";
+@include all-flags-sprites;
+
+$ref-icon: nl;
+$height: flags-sprite-height($ref-icon);
+$width: flags-sprite-width($ref-icon);
 
 ul.locales {
   @include inline-list;
   position: absolute;
   top: 1em;
   right: 1em;
+  a {
+    @include hide-text;
+    display: inline-block;
+    width: $width;
+    height: $height;
+  }
 }

@@ -38,6 +38,7 @@ public/stylesheets/cache
 
 # Publis asssets
 public/assets
+app/assets/images/icons/flags-*.png
 
 # Vendor Cache
 vendor/cache
