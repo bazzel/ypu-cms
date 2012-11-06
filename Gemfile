@@ -9,7 +9,7 @@ gem 'capistrano'
 gem 'haml'
 gem 'rvm-capistrano'
 gem 'mysql2'
-
+gem 'modernizr'
 
 # Gems used only for assets and not required
 # in production environments by default.

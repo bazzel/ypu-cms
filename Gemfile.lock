@@ -102,6 +102,8 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.19)
+    modernizr (2.6.2)
+      sprockets (~> 2.0)
     modular-scale (1.0.2)
       compass (>= 0.11.5)
       sassy-math (>= 1.2)
@@ -241,6 +243,7 @@ DEPENDENCIES
   haml
   hpricot
   jquery-rails (~> 2.0.0)
+  modernizr
   modular-scale
   mysql2
   rails (= 3.2.8)
